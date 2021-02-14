@@ -1,4 +1,4 @@
-### This is a project that i did in my Operation System class in University to practise in shared memory, semaphores, forking and threads.
+# This is a project that i did in my Operation System class in University to practise in shared memory, semaphores, forking and threads.
 ## The 2 processes P1 and P2 send messages between each other.
 ## Each one of the procesess forks to create a ENC process.(ENC1 for P1 and ENC2 for P2) ENC communicates with the channel process.
 ## Channel just simmulates noise with a percentage to change letters of the message.
