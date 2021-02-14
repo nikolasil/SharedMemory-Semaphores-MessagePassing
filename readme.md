@@ -1,3 +1,8 @@
+### This is a project that i did in my Operation System class in University to practise in shared memory, semaphores, forking and threads.
+## The 2 processes P1 and P2 send messages between each other.
+## Each one of the procesess forks to create a ENC process.(ENC1 for P1 and ENC2 for P2) ENC communicates with the channel process.
+## Channel just simmulates noise with a percentage to change letters of the message.
+
 My files are: p1.c, p2.c, channel.c, shared_memory.c, shared_memory.h, semaphore.c, semaphore.h, util.c, util.h
 For compile and run i have make a Makefile. You can use the command(make all) to create the p1, p2, chan.
 
