@@ -1,4 +1,4 @@
-# This project was made during my studies in UOA University and especially for the course Artificial Intelligence 1.
+# This project was made during my studies in UOA University and especially for the course Operation Systems.
 
 ---
 
