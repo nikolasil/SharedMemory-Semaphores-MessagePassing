@@ -1,12 +1,19 @@
-# This is a project that i did in my Operation System class in University to practise in shared memory, semaphores, forking and threads.
-## The 2 processes P1 and P2 send messages between each other.
-## Each one of the procesess forks to create a ENC process.(ENC1 for P1 and ENC2 for P2) ENC communicates with the channel process.
-## Channel just simmulates noise with a percentage to change letters of the message.
+# This project was made during my studies in UOA University and especially for the course Artificial Intelligence 1.
 
-My files are: p1.c, p2.c, channel.c, shared_memory.c, shared_memory.h, semaphore.c, semaphore.h, util.c, util.h
-For compile and run i have make a Makefile. You can use the command(make all) to create the p1, p2, chan.
+---
 
-Running rules:
+> There are comments all over my code if there is something that i didn't covered here.
+
+The 2 processes P1 and P2 send messages between each other.
+Each one of the procesess forks to create a ENC process.(ENC1 for P1 and ENC2 for P2) ENC communicates with the channel process.
+Channel just simmulates noise with a percentage to change letters of the message.
+
+> My files are: p1.c, p2.c, channel.c, shared_memory.c, shared_memory.h, semaphore.c, semaphore.h, util.c, util.h
+> For compile and run i have make a Makefile. You can use the command(make all) to create the p1, p2, chan.
+
+---
+
+## Running rules:
 
     1)  The first process that has to be run is p1, because p1 creates the semaphores and then we can run chan and p2.
 
@@ -17,7 +24,9 @@ Running rules:
     3)  The argument for the probability in the channel must be in the format 0.1 , 0.2, 0.3 . . .
         where 0.1 is 10% 0.2 is 20% . . .
 
-General Information:
+---
+
+## General Information:
 
     1)  All the processes run in a while until TEMP is input. The TEMP will first transfer and then the processes will terminate.
 
@@ -34,7 +43,9 @@ General Information:
 
     5) I have in the shared memory the process id of the channel and p2
 
-Message Transfer:
+---
+
+## Message Transfer:
 
     I wanted to transfer only one thing throw the channel. And not multiply strings.
     So i made a string named line in the shared memory that it will be in the form: message + '\0' + '\0' + checksum + '\0' + '\0' + signature + '\0' + '\0' . . .
